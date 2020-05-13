@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Calculo de escaños</title>
+</head>
+
+<body>
+  <header class="d-flex">
+    <img src="img/favicon.png" alt="">
+    <div class="title">
+      <h1>Calculo de escaños</h1>
+      <h6>Aplicacion para calcular escaños en el sistema D´Hont</h6>
+    </div>
+
+  </header>
+  <main class="d-flex">
+
+    <section class="columna1">
+
+      <form>
+
+        <h6>Ingrese la cantidad de escaños en juego</h6>
+
+        <div class="form-row">
+
+          <div class="col">
+            <input type="text" class="form-control" id="input-escanos" placeholder="Cantidad de escaños" />
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="col">
+            <button class="btn btn-outline-primary btn-block" id="agregar-escanos" disabled=true>Agregar
+              escaños</button>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="col">
+            <button class="btn btn-outline-danger btn-block" id="reset-escanos" disabled=true>
+              Resetear Escaños
+            </button>
+          </div>
+
+        </div>
+
+        <h6>Ingrese los datos de los comicios</h6>
+
+        <div class="form-row">
+
+          <div class="col">
+            <input type="text" class="form-control" id="input-partido" placeholder="Partido" />
+          </div>
+
+          <div class="col">
+            <input type="text" class="form-control" id="input-votos" placeholder="Votos" />
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="col">
+            <button class="btn btn-outline-primary btn-block" id="agregar-partido" disabled=true>Agregar
+              partido</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+
+          <div class="col">
+            <input type="text" class="form-control" id="input-eliminar" placeholder="Partido" />
+          </div>
+
+          <div class="col">
+            <button class="btn btn-outline-danger btn-block" id="eliminar-partido" disabled=true>
+              Eliminar Partido
+            </button>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="col">
+            <button class="btn btn-outline-danger btn-block" id="reset-datos" disabled=true>
+              Resetear Datos
+            </button>
+          </div>
+
+        </div>
+
+        <br>
+
+        <div class="form-row">
+          <div class="col">
+            <button class="btn btn-outline-success btn-block" id="calcular" disabled=true>Calcular escaños</button>
+          </div>
+        </div>
+      </form>
+
+    </section>
+
+    <section class="columna2">
+
+      <table class="table">
+        <thead>
+          <tr id="bodyHeadTr">
+            <th>Partido</th>
+            <th>Votos totales</th>
+          </tr>
+        </thead>
+        <tbody id="bodyTable">
+        </tbody>
+      </table>
+
+    </section>
+
+  </main>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
